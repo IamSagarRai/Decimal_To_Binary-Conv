@@ -1,6 +1,14 @@
-n = int(input("Enter decimal number: "))
-while n > 0:
-    digit = n / 2
-    rem = [n % 2]
-rem = rem[::-1]
-print(rem)
+while True:
+
+    n = int((input("Enter decimal number: ")))
+    temp_n = n
+    binary_conv = []
+
+    while temp_n > 0:
+        rem= temp_n % 2
+        binary_conv.append(rem)
+        temp_n = temp_n // 2
+    
+    binary_conv = binary_conv[::-1]
+    print(binary_conv)
+    
